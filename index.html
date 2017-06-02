@@ -5,15 +5,15 @@
   
   <title>Gao Zhen&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="start from zero">
+  <meta name="description" content="zhen&apos;s techincal blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gao Zhen&#39;s Blog">
-<meta property="og:url" content="http://CamelCoder.github.io/index.html">
+<meta property="og:url" content="http://CamelCoder.github.io.git/index.html">
 <meta property="og:site_name" content="Gao Zhen&#39;s Blog">
-<meta property="og:description" content="start from zero">
+<meta property="og:description" content="zhen&apos;s techincal blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gao Zhen&#39;s Blog">
-<meta name="twitter:description" content="start from zero">
+<meta name="twitter:description" content="zhen&apos;s techincal blog">
   
     <link rel="alternate" href="/atom.xml" title="Gao Zhen&#39;s Blog" type="application/atom+xml">
   
@@ -40,7 +40,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">the blog of zhen</a>
+          <a href="/" id="subtitle">zhen&#39;s techincal blog</a>
         </h2>
       
     </div>
@@ -57,16 +57,52 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://CamelCoder.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://CamelCoder.github.io.git"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-gulp" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/02/gulp/" class="article-date">
+  <time datetime="2017-06-02T10:15:44.000Z" itemprop="datePublished">2017-06-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/02/gulp/">gulp</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://CamelCoder.github.io.git/2017/06/02/gulp/" data-id="cj3fpjblq000058qr2lpbzeej" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-hello" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -82,7 +118,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/02/hello/">hello</a>
+      <a class="article-title" href="/2017/06/02/hello/">使用 hexo 搭建 github 博客</a>
     </h1>
   
 
@@ -90,12 +126,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>你好，欢迎来到我的技术博客</p>
+        <h1 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h1><ul>
+<li>安装 git</li>
+<li>安装 node.js</li>
+<li>安装 hexo</li>
+<li>创建 github repository (<em>e.g. <a href="http://CamelCoder.github.io" target="_blank" rel="external">CamelCoder.github.io</a></em>)</li>
+</ul>
+<h1 id="开启博客之旅"><a href="#开启博客之旅" class="headerlink" title="开启博客之旅"></a>开启博客之旅</h1><ul>
+<li>创建博客</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// 建立一个博客文件夹，并在**该文件夹的外层文件中**初始化博客，&lt;folder&gt;为文件夹的名称，可以随便起名字</div><div class="line">$ hexo init &#123;blogname&#125;</div><div class="line">// 进入博客文件夹，&lt;folder&gt;为文件夹的名称</div><div class="line">$ cd &#123;blogname&#125;</div><div class="line">// node.js的命令，根据博客既定的dependencies配置安装所有的依赖包</div><div class="line">$ npm i</div><div class="line">//git初始化</div><div class="line">$ git init</div></pre></td></tr></table></figure>
+<ul>
+<li>配置博客</li>
+</ul>
+<ol>
+<li><p>修改网站相关信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># Site</div><div class="line">title: Gao Zhen&apos;s Blog </div><div class="line">subtitle: the blog of zhen </div><div class="line">description: start from zero </div><div class="line">author: Zhen Gao </div><div class="line">language: zh-CN </div><div class="line">timezone: Asia/Shanghai</div></pre></td></tr></table></figure>
+</li>
+<li><p>配置统一资源定位符（个人域名）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">url: http://CamelCoder.github.io/</div></pre></td></tr></table></figure>
+</li>
+<li><p>配置部署</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/CamelCoder/CamelCoder.github.io</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+</li>
+<li><p>部署博客</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm i -S hexo-deployer-git</div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+</li>
+<li><p>部署新的 Post</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo new &#123;postname&#125;</div><div class="line">//regenerate files and deploy at once</div><div class="line">$ hexo generate -d</div></pre></td></tr></table></figure>
+</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://CamelCoder.github.io/2017/06/02/hello/" data-id="cj3fk74f50000tsqr7yoq5hbk" class="article-share-link">Share</a>
+      <a data-url="http://CamelCoder.github.io.git/2017/06/02/hello/" data-id="cj3fpjbmu000258qrrnebvzbi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -140,7 +205,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://CamelCoder.github.io/2017/06/02/hello-world/" data-id="cj3fjv2v700000wqrpt8qqo2u" class="article-share-link">Share</a>
+      <a data-url="http://CamelCoder.github.io.git/2017/06/02/hello-world/" data-id="cj3fpjbm0000158qrk5pgtgth" class="article-share-link">Share</a>
       
       
     </footer>
@@ -165,7 +230,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
     </div>
@@ -175,12 +240,16 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/06/02/hello/">hello</a>
+            <a href="/2017/06/02/gulp/">gulp</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/02/hello/">使用 hexo 搭建 github 博客</a>
           </li>
         
           <li>
